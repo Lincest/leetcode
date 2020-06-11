@@ -1,0 +1,16 @@
+5
+aabcc
+dbbca
+aadbbcbcac
+aabcc
+dbbca
+aadbbbaccc
+db
+b
+cbb
+b
+b
+bb
+aa
+bd
+aadb

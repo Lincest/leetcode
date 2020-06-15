@@ -21,7 +21,10 @@ int minSumOfLengths(vector<int>& arr, int target) {
 			if (bfindex >= 0 && dp[bfindex] < maxn) {
 				ans = min(ans, cur + dp[bfindex]);
 			} 
-			i != 0 ? dp[i] = min(dp[i-1], cur) : dp[i] = cur;
+			if(i)
+				dp[i] = min(dp[i-1], cur);
+			else
+				dp[i] = min(cur, maxn);
 		}
 		mp[sum] = i;
 	}

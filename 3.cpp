@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void reIO() {
+#ifndef ROCCOSHI
+	freopen("in.txt", "r", stdin);
+	freopen("out.txt", "w", stdout);
+#endif
+}
+
 int lengthOfLongestSubstring(string s) {
 	int ans = 0;
 	int cnt = 0;
@@ -23,12 +30,7 @@ int lengthOfLongestSubstring(string s) {
 	return ans;
 }
 
-
-
-
 int main() {
-	freopen("in.txt", "r", stdin);
-	freopen("out.txt", "w", stdout);
 
 	string s;
 	cin >> s;
